@@ -1,9 +1,9 @@
 import {Component} from 'angular2/core';
 import {MyComponentComponent} from './my-component.component';
 import {ContactListComponent} from './ContactList.components';
-import {NewContactComponent} from './new-contact.component'
-import {ROUTER_DIRECTIVES} from 'angular2/router'
-import {RouteConfig} from 'angular2/router'
+import {NewContactComponent} from './new-contact.component';
+import {ROUTER_DIRECTIVES} from 'angular2/router';
+import {RouteConfig} from 'angular2/router';
 
 
 @Component({
@@ -16,9 +16,11 @@ import {RouteConfig} from 'angular2/router'
 @RouteConfig(
     [
         {path: '/Contacts', name: 'Contacts', component: ContactListComponent, useAsDefault: true},
-        {path: '/NewContact', name: 'NewContact', component: NewContactComponent}
+        {path: '/NewContact', name: 'NewContact', component: NewContactComponent},
+        {path: '/NewContact/:lastName', name: 'NewContactFromContact', component: NewContactComponent}
     ]
 )
+ 
 export class AppComponent {
 
   

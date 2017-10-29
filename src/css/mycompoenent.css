@@ -1,11 +1,1 @@
-.is-awesome{font-weight:700;color:green}
-
-label{
-    display: inline-block;
-    width: 140px;
-}
-
-input
-{
-    width: 250px;
-}
+.is-awesome{font-weight:700;color:red}
